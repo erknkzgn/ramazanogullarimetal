@@ -1,0 +1,105 @@
+<% include ./partials/header %>
+<!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        <!--================Home Blog Area =================-->
+        <section class="home_blog_area pad_top">
+        	<div class="container">
+        		<div class="home_blog_inner">
+        			<% Urunler.forEach(function(urun){ %>
+        			<% if(urun.sıra%2==0 ){ %>
+        			<div class="row h_blog_item">
+        				<div class="col-lg-6">
+							<div class="h_blog_img">
+								<img class="img-fluid" src="<%= urun.resim %>" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="h_blog_text">
+								<div class="h_blog_text_inner left">
+									<h4><%= urun.name %></h4>
+									<p><%= urun.text %></p>
+									<a class="main_btn2" method="get" href="galeri">Galeriyi Görüntüle</a>
+								</div>
+							</div>
+						</div>
+        			</div>
+        			 <% } else { %>
+        			<div class="row h_blog_item">
+						<div class="col-lg-6">
+							<div class="h_blog_text">
+								<div class="h_blog_text_inner right">
+									<h4><%= urun.name %></h4>
+									<p><%= urun.text %></p>
+									<a class="main_btn2" method="get" href="galeri">Galeriyi Görüntüle</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="h_blog_img">
+								<img class="img-fluid" src="<%= urun.resim %>" alt="">
+							</div>
+						</div>
+        			</div>
+        		
+        			<% };%>
+        		<% });%>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Home Blog Area =================-->
+        <div class="whole-wrap">
+					<div class="section-top-border">
+						<h3 class="mb-30 title_color">Tablo</h3>
+						<div class="progress-table-wrap">
+							<div class="progress-table">
+								<div class="table-head">
+									<div class="serial">#</div>
+									<div class="country">Ürünler</div>
+									<div class="visit">Fiyatlar</div>
+									<div class="percentage">Stok Durumu</div>
+								</div>
+								<% Urunler.forEach(function(urun){ %>
+								<div class="table-row">
+									<div class="serial"><%= urun.sıra %></div>
+									<div class="country"> <h3><%= urun.name %></h3></div>
+									<div class="visit"><%= urun.fiyat %>₺</div>
+									<div class="percentage">
+										<div class="progress">
+											<div class="progress-bar color-<%= urun.sıra %>" role="progressbar" style="width: <%= urun.stok %>%" aria-valuenow="<%= urun.stok %>" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>						
+							<% });%>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row" style="">
+					<% Urunler.forEach(function(urun){ %>
+						<div class="card" style="width: 18rem; margin-right: 40px;">
+						<img src="<%= urun.resim %>" class="card-img-top" alt="...">
+  						<div class="card-body">
+    						<h5 class="card-title"><%= urun.name %></h5>
+    						<p class="card-text"><%= urun.text %></p>
+    						<a href="#" class="btn btn-primary"><%= urun.fiyat %>₺</a>
+  						</div>
+  						</div>
+					
+		<% });%>
+		</div>
+					</div>
+				</div>
+        			
+        	
+<% include ./partials/footer %>

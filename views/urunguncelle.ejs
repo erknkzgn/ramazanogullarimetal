@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+<section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						
+						
+					</div>
+				</div>
+            </div>
+        </section>
+        
+        
+    <form action="/urunBilgileri/<%=urun._id %>?_method=PUT" method="POST"  >
+    	<head><strong>Ana URUN grubu</strong></head>
+    	<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[anaUrunGrubu]" value="<%= urun.anaUrunGrubu %> " >
+    	<head><strong>Urun Adı</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[name]" value="<%= urun.name %>" >
+		<head><strong>Urun Fiyatı</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[fiyat]" value="<%= urun.fiyat %>" >
+		<head><strong>Urun Resim Adresi</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[resim]" value="<%= urun.resim %>" >
+		<head><strong>Urun Metni</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[metin]" value="<%= urun.text %>" >
+		<head><strong>Urun Sıra Numarası</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[sıra]" value="<%= urun.sıra %>" >
+		<button style="margin-bottom: 10px;" class="btn btn-warning btn-lg btn-block">Güncelle</button>
+	</form>
+	<form action="/urunBilgileri/<%=urun._id %>?_method=DELETE" method="POST">
+		<button style="margin-bottom: 200px;" class="btn btn-danger btn-lg btn-block">SİL</button>
+	</form>
+
+<% include ./partials/footer %>

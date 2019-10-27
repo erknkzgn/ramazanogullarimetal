@@ -1,0 +1,254 @@
+<% include ./partials/header %>
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Ürünler</h2>
+							<div class="page_link">
+								<a method="get" href="/">Home</a>
+								<a method="get" href="urunlerimiz">Ürünler</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        
+        
+	
+			
+			<!-- Start Align Area -->
+			<div class="container">
+				<div >
+				    <div class="row">
+					<div class=" col-lg-4 col-sm-4" style="width: 500px;" >
+						<table style="margin-top: 20px;" class="table table-bordered">
+  						<thead class="thead-dark">
+    				<tr>
+     					<th scope="col">#</th>
+      					<th scope="col">Ürün Adı</th>
+      					<th scope="col">Fiyatı</th>
+     
+   					</tr>
+  				</thead>
+ 				 	<tbody>
+  				 		<tr>
+  				    		<th scope="row">1</th>
+  				    		<td>Bakır (kırkanbar)</td>
+  				    		<td><%= Urun.bakirKirkanbar %>₺</td>
+  				    
+  				  		</tr>
+  				  		<tr>
+ 				     		<th scope="row">2</th>
+ 				    		 <td>Soyma Bakır</td>
+ 				     		<td><%= Urun.bakir %>₺</td>
+				     
+				    	</tr>
+				    	<tr>
+				      <th scope="row">3</th>
+				      <td colspan="2"><a href="/iletisim">Diğer Bakır Çeşitleri İçin Arayınız</a></td>
+ 				     
+ 				   </tr>
+ 				 </tbody>
+				</table>
+				</div>
+				<div class=" col-lg-4 col-sm-4" style="width: 500px;" >
+			<table style="margin-top: 20px;" class="table table-bordered">
+  			<thead class="thead-dark">
+    		<tr>
+     			 <th scope="col">#</th>
+      			<th scope="col">Ürün Adı</th>
+      			<th scope="col">Fiyatı</th>
+     
+   			 </tr>
+  			</thead>
+ 				 <tbody>
+  				  <tr>
+  				    <th scope="row">1</th>
+  				    <td>Sarı(Kırkanbar)</td>
+  				    <td><%= Urun.sariKirkanbar %>₺</td>
+  				    
+  				  </tr>
+  				  <tr>
+ 				     <th scope="row">2</th>
+ 				     <td>Çubuk</td>
+ 				     <td><a href="/iletisim"> Arayınız</a></td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">3</th>
+ 				     <td>Çinko</td>
+ 				     <td><%= Urun.cinko %>₺</td>
+				     
+				    </tr>
+			
+ 				 </tbody>
+				</table>
+				</div>
+				<div class=" col-lg-4 col-sm-4" style="width: 500px;" >
+					<table style="margin-top: 20px;" class="table table-bordered">
+  					<thead class="thead-dark">
+    				<tr>
+     					<th scope="col">#</th>
+      					<th scope="col">Ürün Adı</th>
+      					<th scope="col">Fiyatı</th>
+     
+   			 		</tr>
+  			</thead>
+ 				 <tbody>
+  				  <tr>
+  				    <th scope="row">1</th>
+  				    <td>Temiz Kırkanbar Kablo</td>
+  				    <td><%= Urun.kirkanbarKablo %>₺</td>
+  				    
+  				  </tr>
+  				  <tr>
+ 				     <th scope="row">2</th>
+ 				     <td>Antikron Kablo</td>
+ 				     <td><a href="/iletisim"> Arayınız</a></td>
+				     
+				    </tr>
+ 				 </tbody>
+				</table>
+				</div>
+				<div class=" col-lg-4 col-sm-4" style="width: 500px;" >
+			<table style="margin-top: 20px;" class="table table-bordered">
+  			<thead class="thead-dark">
+    		<tr>
+     			 <th scope="col">#</th>
+      			<th scope="col">Ürün Adı</th>
+      			<th scope="col">Fiyatı</th>
+     
+   			 </tr>
+  			</thead>
+ 				 <tbody>
+  				  <tr>
+  				    <th scope="row">1</th>
+  				    <td>Hurda Alüm. (Profil ve Tastabak)</td>
+  				    <td><%= Urun.HurdaAlum %>₺</td>
+  				    
+  				  </tr>
+  				  <tr>
+ 				     <th scope="row">2</th>
+ 				     <td>Araiş Alüm.</td>
+ 				     <td><%= Urun.AraisAlum %>₺</td>
+				     
+				    </tr>
+				     <tr>
+ 				     <th scope="row">3</th>
+ 				     <td>Matbaa ve Jant</td>
+ 				     <td><%= Urun.MatbaaJant %>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">4</th>
+ 				     <td>Sert Alüm.</td>
+ 				     <td><%= Urun.SertAlum %>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">5</th>
+ 				     <td>Alüm. Talaşı</td>
+ 				     <td><%= Urun.AlumTalasi %>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">6</th>
+ 				     <td>Alüm. Bakırlı Petek</td>
+ 				     <td><%= Urun.AlumBakırliPetek %>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">6</th>
+ 				     <td>Kutu Alüm.</td>
+ 				     <td><%= Urun.KutuAlum %>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">6</th>
+ 				     <td>Alüm. Radyatör (Oto Radyatör)</td>
+ 				     <td><%= Urun.AlumOtoRadyatör %>₺</td>
+				     
+				    </tr>
+ 				 </tbody>
+				</table>
+				</div>
+				<div class=" col-lg-4 col-sm-4" style="width: 500px;" >
+			<table style="margin-top: 20px;" class="table table-bordered">
+  			<thead class="thead-dark">
+    		<tr>
+     			 <th scope="col">#</th>
+      			<th scope="col">Ürün Adı</th>
+      			<th scope="col">Fiyatı</th>
+     
+   			 </tr>
+  			</thead>
+ 				 <tbody>
+  				  <tr>
+ 				     <th scope="row">1</th>
+ 				     <td>Levha Kurşun</td>
+ 				     <td><%= Urun.LevhaKursun%>₺</td>
+				     
+				    </tr>
+  				  <tr>
+ 				     <th scope="row">2</th>
+ 				     <td>Kurşun</td>
+ 				     <td><%= Urun.Kursun%>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">3</th>
+ 				     <td>Akü</td>
+ 				     <td><%= Urun.Aku%>₺</td>
+				     
+				    </tr>
+				    <tr>
+ 				     <th scope="row">4</th>
+ 				     <td>Küçük Akü</td>
+ 				     <td><%= Urun.KucukAku%>₺</td>
+				     
+				    </tr>
+ 				 </tbody>
+				</table>
+				</div>
+				<div class=" col-lg-4 col-sm-4" style="width: 500px;" >
+			<table style="margin-top: 20px;" class="table table-bordered">
+  			<thead class="thead-dark">
+    		<tr>
+     			 <th scope="col">#</th>
+      			<th scope="col">Ürün Adı</th>
+      			<th scope="col">Fiyatı</th>
+     
+   			 </tr>
+  			</thead>
+ 				 <tbody>
+  				  <tr>
+ 				     <th scope="row">4</th>
+ 				     <td>Krom</td>
+ 				     <td><%= Urun.Krom%>₺</td>
+				     
+				    </tr>
+  				  <tr>
+ 				     <th scope="row">2</th>
+ 				     <td>Krom Talaşı</td>
+ 				     <td><%= Urun.KromTalasi%>₺</td>
+				     
+				    </tr>
+				    
+ 				 </tbody>
+				</table>
+				</div>
+				
+	</div>
+			</div>
+			</div>
+			
+	    
+			
+			<!-- End Align Area -->
+        
+<% include ./partials/footer %>

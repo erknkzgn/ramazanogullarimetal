@@ -1,0 +1,95 @@
+<% include ./partials/header %>
+<div>
+	<section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="caption text-center">
+							<a class="btn btn-success" href="/urunBilgileri/urunekle">Yeni Urun Ekle</a><br><br>
+							<a class="btn btn-success" href="/urunBilgileri/ikinciElResim">İkinci El Ürün Ekle</a>
+							</form>
+						</div>
+					</div>
+				</div>
+            </div>
+    </section>
+</div>
+	
+        <div  class="container">
+        	<h1>Ana Ürünler</h1>
+        	<div class="row">
+        	<% Urunler.forEach(function(urun){ %>
+        	<div class="col-md-3 col-sm-6">
+        		<div class="thumbnail">
+        			<img class="img-fluid" src="<%=urun.resim%>">
+        			<div class="caption text-center">
+        				<h3><%= urun.name %></h3>
+        				<p>
+        					<a href="/urunBilgileri/<%= urun._id %>/urunguncelle" class="btn btn-primary">Güncelle</a>
+        				</p>
+        			</div>
+        		</div>
+        	</div>
+
+        	<% });%>
+        	
+        	</div>
+        	
+        	<h1>İkinci El Ürünler</h1>
+        	<div class="row">        	
+        	<% IkinciEller.forEach(function(ikinciel){ %>
+        		<div class="col-md-3 col-sm-6">
+        		<div class="thumbnail">
+        			<img class="img-fluid" src="<%=ikinciel.resim%>">
+        			<div class="caption text-center">
+        				<h3><%= ikinciel.name %></h3>
+        				<p>
+        					<a href="/urunBilgileri/<%= ikinciel._id %>/ikinciElGuncelle" class="btn btn-primary">Güncelle</a>
+        				</p>
+        			</div>
+        		</div>
+        	</div>
+        	
+        	
+        	<% });%>
+        </div>
+        <h1>Ürün Fiyatları</h1>
+        	<div class="row">        	
+        	<% fiyatlar.forEach(function(fiyat){ %>
+        		<div class="col-md-3 col-sm-6">
+        		<div class="thumbnail">
+        			<img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/02/13/09/47/finance-634901__340.png">
+        			<div class="caption text-center">
+        				<h3><%= fiyat.name %></h3>
+        				<p>
+        					<a href="/FiyatGuncelle/<%= fiyat._id %>" class="btn btn-primary">Güncelle</a>
+        				</p>
+        			</div>
+        		</div>
+        	</div>
+        	
+        	
+        	<% });%>
+        </div>
+        <h1>Kullanıcı Ayarları</h1>
+        	<div class="row">        	
+        	<% Users.forEach(function(user){ %>
+        		<div class="col-md-3 col-sm-6">
+        		<div class="thumbnail">
+        			<img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/12/22/22/23/wheel-3034334__340.jpg">
+        			<div class="caption text-center">
+        				<h3><%= user.username %></h3>
+        				<p>
+        					<a href="/UserGuncelle/<%= user._id %>" class="btn btn-primary">Güncelle</a>
+        				</p>
+        			</div>
+        		</div>
+        	</div>
+        	
+        	
+        	<% });%>
+        </div>
+     </div>
+        
+
+<% include ./partials/footer %>

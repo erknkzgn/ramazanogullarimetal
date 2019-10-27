@@ -1,0 +1,56 @@
+<% include ./partials/header %>
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Project Details</h2>
+							<div class="page_link">
+								<a href="/">Home</a>
+								<a href="urunlerimiz">Projects</a>
+								<a href="project-details">Project Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Portfolio Details Area =================-->
+        <section class="portfolio_details_area p_120">
+        	<div class="container">
+        		<div class="portfolio_details_inner">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="left_img">
+								<img class="img-fluid" src="<%= ikinciEl.resim %>" alt="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="portfolio_right_text">
+								<h4><%= ikinciEl.name %></h4>
+								<p><%= ikinciEl.text %></p>
+								<ul class="list">
+									
+									<li><span>Fiyat</span>: <%= ikinciEl.fiyat%></li>
+									<li><span>Websitesi</span>:  www.ramazaogullari.com</li>
+									
+								</ul>
+								<ul class="list social_details">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>							
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+       				
+        		</div>
+        	</div>
+        </section>
+        <!--================End Portfolio Details Area =================-->
+        
+<% include ./partials/footer %>
