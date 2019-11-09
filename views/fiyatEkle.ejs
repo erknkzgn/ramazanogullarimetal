@@ -1,0 +1,62 @@
+<% include ./partials/header %>
+<section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						
+						
+					</div>
+				</div>
+            </div>
+        </section>
+        
+        
+    <form action="/fiyatEkle" method="POST"  >
+       	<head><strong>Soyma Bakır</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[bakir]" value="<%= Fiyat.bakir %>" >
+		<head><strong>Bakır Kırkanbar</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[bakirKirkanbar]" value="<%= Fiyat.bakirKirkanbar %>" >
+		<head><strong>Sarı</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[sari]" value="<%= Fiyat.sari %>" >
+		<head><strong>Sarı Kırkanbar</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[sariKirkanbar]" value="<%= Fiyat.sariKirkanbar %>" >
+		<head><strong>Çinko</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[cinko]" value="<%= Fiyat.cinko %>" >
+		<head><strong>Kırkanbar Kablo</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[kirkanbarKablo]" value="<%= Fiyat.kirkanbarKablo %>" >
+		<head><strong>Antikron Kablo</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[AntikronKablo]" value="<%= Fiyat.AntikronKablo %>" >
+		<head><strong>Hurda Aluminyum (Profil ve Tastabak)</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[HurdaAlum]" value="<%= Fiyat.HurdaAlum %>" >
+		<head><strong>Arais Alüminyum</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[AraisAlum]" value="<%= Fiyat.AraisAlum %>" >
+		<head><strong>Matbaa Jant</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[MatbaaJant]" value="<%= Fiyat.MatbaaJant %>" >
+		<head><strong>Sert Alüminyum</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[SertAlum]" value="<%= Fiyat.SertAlum %>" >
+		<head><strong>Alüminyum Talaşı</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[AlumTalasi]" value="<%= Fiyat.AlumTalasi %>" >
+		<head><strong>Aluminyum Bakırlı Petek</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[AlumBakırliPetek]" value="<%= Fiyat.AlumBakırliPetek %>" >
+		<head><strong>KUTU Aluminyum</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[KutuAlum]" value="<%= Fiyat.KutuAlum %>" >
+		<head><strong>Alum Oto Radyator</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[AlumOtoRadyatör]" value="<%= Fiyat.AlumOtoRadyatör%>" >
+		<head><strong>Levha Kursun</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[LevhaKursun]" value="<%= Fiyat.LevhaKursun %>" >
+		<head><strong>Kurşun</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[Kursun]" value="<%= Fiyat.Kursun %>" >
+		<head><strong>AKÜ</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[Aku]" value="<%= Fiyat.Aku %>" >
+		<head><strong>Küçük Akü</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[KucukAku]" value="<%= Fiyat.KucukAku %>" >
+		<head><strong>Krom</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[Krom]" value="<%= Fiyat.Krom %>" >
+		<head><strong>Krom Talaşı</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="Fiyat[KromTalasi]" value="<%= Fiyat.KromTalasi %>" >
+		<button style="margin-bottom: 10px;" class="btn btn-warning btn-lg btn-block">Güncelle</button>
+
+	</form>
+	
+
+<% include ./partials/footer %>

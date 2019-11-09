@@ -298,9 +298,21 @@ app.delete('/urunBilgileri/ikinciEl/:id',kullanıcıGirisi,  function(req,res) {
 
 app.get('/', function(req,res) {
 	res.render("index")
-	
-	
+
 });
+
+/*app.get('/fiyatEkle13579', function(req,res) {
+	Fiyat.find({}, function(err,fiyatlar){
+		if (err) {
+			console.log(err);
+		}else{
+			
+			res.render("fiyatEkle",{Fiyat:fiyatlar});
+		}
+	})
+	
+		
+});*/
 
 app.get('/urunBilgileri', kullanıcıGirisi, function(req,res) {
 	Urun.find({},function(err,UrunlerDB){
