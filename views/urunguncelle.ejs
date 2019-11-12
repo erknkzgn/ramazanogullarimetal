@@ -12,12 +12,8 @@
         
         
     <form action="/urunBilgileri/<%=urun._id %>?_method=PUT" method="POST"  >
-    	<head><strong>Ana URUN grubu</strong></head>
-    	<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[anaUrunGrubu]" value="<%= urun.anaUrunGrubu %> " >
-    	<head><strong>Urun Adı</strong></head>
-		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[name]" value="<%= urun.name %>" >
-		<head><strong>Urun Fiyatı</strong></head>
-		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[fiyat]" value="<%= urun.fiyat %>" >
+    	<head><strong>Baslik</strong></head>
+		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[baslik]" value="<%= urun.baslik %>" >
 		<head><strong>Urun Resim Adresi</strong></head>
 		<input style="margin-bottom: 10px; " class="form-control" type="text" name="urun[resim]" value="<%= urun.resim %>" >
 		<head><strong>Urun Metni</strong></head>

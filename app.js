@@ -183,9 +183,7 @@ app.post('/resimYukle', (req, res) => {
 
 app.post('/UrunEkle',function(req,res){
 	var yeniUrun = new Urun({
-	name 			: req.body.name,
-	anaUrunGrubu	: req.body.anaUrun,
-	fiyat 			: req.body.fiyat,
+	baslik 			: req.body.baslik,
 	resim 			: req.body.resim,
 	sıra 			: req.body.sıra,
 	text 			: req.body.metin
@@ -243,10 +241,8 @@ app.post('/UrunEkle',function(req,res){
 app.post('/ikinciElEkle',kullanıcıGirisi, function(req,res){
 	var ikinciElUrun = new IkinciEl({
 	name 			: req.body.name,
-	anaUrunGrubu	: req.body.anaUrun,
 	fiyat 			: req.body.fiyat,
 	resim 			: req.body.resim,
-	sıra 			: req.body.sıra,
 	text 			: req.body.metin
 
    });
@@ -297,8 +293,14 @@ app.delete('/urunBilgileri/ikinciEl/:id',kullanıcıGirisi,  function(req,res) {
 });
 
 app.get('/', function(req,res) {
-	res.render("index")
-
+	Urun.find({},function(err,UrunlerDB){
+		if (err) {
+			console.log(err);
+		}else{
+			console.log(UrunlerDB)
+			res.render("index",{Urunler : UrunlerDB});
+		}
+	})
 });
 
 /*app.get('/fiyatEkle13579', function(req,res) {

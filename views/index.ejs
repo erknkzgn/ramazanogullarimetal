@@ -97,51 +97,36 @@
         		<div class="main_title">
         			<h2>Memnuniyetiniz Önceliğimizdir</h2>
         		</div>
-        		<div class="row m0 service_inner">
+                <div class="row m0 service_inner">
+                    <% Urunler.forEach(function(urun){ %>
+                    <% if(urun.sıra<=2 ){ %>
         			<div class="col-lg-3 col-md-6 p0">
         				<div class="service_img">
-        					<img class="img-fluid" src="img/service/service-1.jpg" alt="">
+        					<img class="img-fluid" src="<%= urun.resim %>" alt="">
         				</div>
         			</div>
         			<div class="col-lg-3 col-md-6 p0">
         				<div class="service_text">
-        					<h4>Fiyat İçin<br />Arayınız</h4>
-        					<p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacıini </p>
+        					<h4><%= urun.baslik %></h4>
+        					<p><%= urun.text %></p>
         				</div>
         			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="img/service/service-2.jpg" alt="">
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Fiyat İçin<br />Arayınız</h4>
-        					<p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaerisini </p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Fiyat İçin<br />Arayınız</h4>
-        					<p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacınbir yazı galerisini </p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="img/service/service-3.jpg" alt="">
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_text">
-        					<h4>Fiyat İçin<br />Arayınız</h4>
-        					<p>Lorem Ipsum, dizgi ve  oluşturmak üzere bir yazı galerisini </p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6 p0">
-        				<div class="service_img">
-        					<img class="img-fluid" src="img/service/service-4.jpg" alt="">
-        				</div>
-        			</div>
+                    <% } else { %>
+        			 <div class="col-lg-3 col-md-6 p0">
+                        <div class="service_text">
+                            <h4><%= urun.baslik %></h4>
+                            <p><%= urun.text %></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p0">
+                        <div class="service_img">
+                            <img class="img-fluid" src="img/service/service-4.jpg" alt="">
+                        </div>
+                    </div>
+                        <% };%>
+                <% });%>
+        			
+        		
         		</div>
         	</div>
         </section>

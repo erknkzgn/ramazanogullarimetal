@@ -2,10 +2,8 @@ var mongoose = require('mongoose');
 
 
 var UrunSchema = new mongoose.Schema({
-	name 			: String,
-	fiyat 			: String,
+	baslik			: String,
 	resim 			: String,
-	anaUrunGrubu	: String,
 	sıra 			: Number,
 	text 			: String
 });
