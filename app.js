@@ -116,7 +116,7 @@ function kullaniciGirisi(username,password,err){
 
 app.post('/giris',passport.authenticate('local', { 
 		successRedirect: '/urunBilgileri',
-  		failureRedirect: '/kaydol'}),
+  		failureRedirect: '/giris'}),
 	function(req,res){
 
 	}
@@ -128,7 +128,7 @@ app.get('/cikisyap', function(req,res) {
 });
 
 //=====================KAYIT OL===============================
-app.get('/kaydol', function(req,res) {
+app.get('/kaydolCaner1907', function(req,res) {
 	res.render("kaydol");
 });
 

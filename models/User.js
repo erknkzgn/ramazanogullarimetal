@@ -8,6 +8,7 @@ var UserSchema = new mongoose.Schema({
 	hakkimizda 	: String,
 	adres		: String,
 	telefon		: String,
+	telefon1	: String,
 	wtel		: Number,
 	password 	: String
 });

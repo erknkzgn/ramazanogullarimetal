@@ -23,7 +23,11 @@ var FiyatSchema = new mongoose.Schema({
 	Aku					: String,
 	KucukAku			: String,
 	Krom				: String,
-	KromTalasi			: String
+	KromTalasi			: String,
+	DkpDemir			: String,
+	EkstraDemir			: String,
+	ToplamaDemir		: String,
+	Talas    			: String
 });
 
 module.exports = mongoose.model("Fiyat",FiyatSchema);

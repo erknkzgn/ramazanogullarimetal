@@ -12,7 +12,6 @@
         
         
     <form action="/urunBilgileri/ikinciEl/<%=ikinciEl._id %>?_method=PUT" method="POST"  >
-    	<head><strong>Ana URUN grubu</strong></head>
     	<head><strong>Urun Adı</strong></head>
 		<input style="margin-bottom: 10px; " class="form-control" type="text" name="ikinciEl[name]" value="<%= ikinciEl.name %>" >
 		<head><strong>Urun Fiyatı</strong></head>
@@ -21,8 +20,7 @@
 		<input style="margin-bottom: 10px; " class="form-control" type="text" name="ikinciEl[resim]" value="<%= ikinciEl.resim %>" >
 		<head><strong>Urun Metni</strong></head>
 		<input style="margin-bottom: 10px; " class="form-control" type="text" name="ikinciEl[metin]" value="<%= ikinciEl.text %>" >
-		<head><strong>Urun Sıra Numarası</strong></head>
-		<input style="margin-bottom: 10px; " class="form-control" type="text" name="ikinciEl[sıra]" value="<%= ikinciEl.sıra %>" >
+		
 		<button style="margin-bottom: 10px;" class="btn btn-warning btn-lg btn-block">Güncelle</button>
 	</form>
 	<form action="/urunBilgileri/ikinciEl/<%=ikinciEl._id %>?_method=DELETE" method="POST">
