@@ -14,9 +14,9 @@ var express 					= require("express"),
 	LocalStrategy				= require('passport-local').Strategy,
 	passportLocalMongoose		= require('passport-local-mongoose'),
 	session 					= require('express-session');
-//mongoose.connect('mongodb://localhost/hurdaci', {useNewUrlParser: true});
+//mongoose.connect('mongodb://localhost/DbName', {useNewUrlParser: true});
 
-mongoose.connect('mongodb://erkan:erkn.1212@ds351807.mlab.com:51807/hurdaci', {useNewUrlParser: true});
+mongoose.connect('mongodb://name:xxxxx@ds351807.mlab.com:51807/xxxx', {useNewUrlParser: true});
 
 
 var db = mongoose.connection;
