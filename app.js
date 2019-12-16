@@ -128,9 +128,7 @@ app.get('/cikisyap', function(req,res) {
 });
 
 //=====================KAYIT OL===============================
-app.get('/kaydolCaner1907', function(req,res) {
-	res.render("kaydol");
-});
+
 
 app.get('/ikinciElDetay/:id', function(req,res) {
 	IkinciEl.findById(req.params.id,function(err,ikinciEl){
