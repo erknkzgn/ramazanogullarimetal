@@ -448,7 +448,7 @@ app.get('/test', function(req,res) {
 
 
 app.get('/hakkimizda', function(req,res) {
-	User.findOne({name:"Caner"},function(err,users){
+	User.findOne({name:"Ramazanogullari"},function(err,users){
 				if (err) {
 					console.log(err);
 				}else{
